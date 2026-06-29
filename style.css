@@ -11,6 +11,12 @@ header {
     margin-bottom: 20px;
 }
 
+header img {
+    height: 60px;
+    display: block;
+    margin: auto 0;
+}
+
 nav {
     padding-right: 20px;
 }
@@ -24,11 +30,19 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    position: relative;
 }
 
 .sous-menu {
     display: none;
     flex-direction: column;
+    position:absolute;
+    top: 100%;
+    right:0;
+    white-space: nowrap;
+    background-color: bisque;
+    border: 1px saddlebrown;
+    padding: 10px;
 }
 
 nav ul li:hover .sous-menu {
