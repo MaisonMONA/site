@@ -159,6 +159,7 @@ main h1 {
     border-radius: 8px;
     border: 6px solid black;
     flex-shrink: 0;
+    margin-top: 165px;
 }
 
 .bloc-carte-texte h2 {
@@ -176,6 +177,71 @@ main h1 {
     line-height: 24px;
     width: 373px;
     height: 168px;
+}
+
+.bloc-collection {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 578px;
+    margin: 100px auto 0 auto;
+}
+
+.bloc-collection-texte h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    width: 373px;
+}
+
+.bloc-collection-texte p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 373px;
+}
+
+.bloc-collection img {
+    width: 165px;
+    height: 374px;
+    border-radius: 8px;
+    border: 6px solid black;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.bloc-annuaire {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 578px;
+    margin: 100px auto 0 auto;
+}
+
+.bloc-annuaire img {
+    width: 165px;
+    height: 374px;
+    border-radius: 8px;
+    border: 6px solid black;
+    flex-shrink: 0;
+}
+
+.bloc-annuaire-texte h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    width: 373px;
+}
+
+.bloc-annuaire-texte p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 373px;
 }
 
 footer {
