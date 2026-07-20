@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Maison MONA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <section id="historique">
+            <h2>Historique</h2>
+        </section>
+
+        <section id="mission">
+            <h2>Mission</h2>
+        </section>
+
+        <section id="equipe">
+            <h2>Équipe</h2>
+        </section>
+
+        <section id="conseil">
+            <h2>Conseil d'administration</h2>
+        </section>
+
+        <section id="partenaires">
+            <h2>Nos partenaires</h2>
+        </section>
+
+        <section id="contacts">
+            <h2>Contacts</h2>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+</body>
+</html>
