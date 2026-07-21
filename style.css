@@ -65,8 +65,88 @@ nav a {
 nav a:hover {
     color: rgb(245, 212, 0);
 }
+/* ===== PAGE À PROPOS ===== */
 
-/* ===== SECTION CARTES ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ===== TITRE ===== */
+
+main h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 40px auto;
+}
+
+
+/* ===== GRANDE IMAGE ===== */
+
+.apropos-hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.apropos-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+
+/* ===== ZONE JAUNE DES CONTENUS ===== */
+
+.apropos-contenu {
+    background-color: #FCEC80;
+    padding: 80px 40px;
+}
+
+/* ===== TEXTE DES SECTIONS ===== */
+
+.apropos-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+/* ===== SECTIONS BLANCHES ===== */
+
+.apropos-section {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* ===== TITRES DES SECTIONS ===== */
+
+.apropos-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* ===== TEXTES ===== */
+
+.apropos-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+}
+/* ===== SECTION CARTES ACCUEIL ===== */
 .cartes-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
