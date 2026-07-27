@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 body { 
     background-color: #F5F5F5;
     min-height: 100vh;
@@ -145,6 +144,190 @@ main h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     line-height: 28px;
+}
+
+/* ===== CONTENU DES SECTIONS ===== */
+
+.apropos-contenu-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Texte */
+
+.apropos-texte {
+    flex: 1;
+}
+
+.apropos-texte p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+/* Liste */
+
+.apropos-texte ul {
+    margin: 20px 0;
+    padding-left: 24px;
+}
+
+.apropos-texte li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+/* Image */
+
+.apropos-image {
+    flex: 1;
+}
+
+.apropos-image img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+/* ===== ÉQUIPE ===== */
+
+.equipe-grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 24px;
+}
+
+.equipe-colonne ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.equipe-colonne li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.equipe-colonne li strong {
+    font-weight: 600;
+}
+
+/* ===== SOUS-TITRE ===== */
+
+.equipe-sous-titre {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* ===== SÉPARATEUR ANCIEN·NE·S CONTRIBUTEURS ===== */
+
+.separateur-titre {
+    margin: 60px 0 40px;
+}
+
+
+/* Ligne horizontale */
+
+.separateur-titre span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+
+
+/* Titre seul */
+
+.separateur-titre h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+}
+
+
+/* ===== ARTISTES EN RÉSIDENCE ===== */
+
+.equipe-residence {
+    margin-top: 50px;
+}
+
+
+.artistes-liste ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+
+.artistes-liste li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+
+/* Liens Instagram */
+
+.artistes-liste a {
+    color: rgb(33, 65, 245);
+    text-decoration: underline;
+    margin-left: 8px;
+}
+
+.artistes-liste a:hover {
+    opacity: 0.6;
+}
+
+/* ===== NOS PARTENAIRES ===== */
+
+.partenaires-contenu p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* Liens dans le paragraphe */
+
+.partenaires-contenu p a {
+    color: blue (33, 65, 245);
+    text-decoration: underline;
+}
+
+
+/* Logos */
+
+.partenaires-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+
+.partenaires-logos img {
+    width: 320px;
+    height: auto;
+    object-fit: block;
 }
 /* ===== SECTION CARTES ACCUEIL ===== */
 .cartes-section {
