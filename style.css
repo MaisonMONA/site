@@ -795,6 +795,7 @@ main h1 {
 /* Image à droite */
 .mediation-image {
     flex: 1;
+    padding-top: 50px;
 }
 
 .mediation-image img {
@@ -802,6 +803,133 @@ main h1 {
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
+}
+
+/* ===== SECTION JAUNE MÉDIATION ===== */
+.mediation-jaune {
+    display: flex;
+    gap: 40px;
+    background-color: #FCEC80;
+    padding: 40;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    border-radius: 12px;
+    padding-top: 40px;
+}
+
+.mediation-bloc {
+    flex: 1;
+}
+
+.mediation-bloc h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.mediation-bloc p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.mediation-bloc ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.mediation-bloc ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+/* ===== NOS PARCOURS ===== */
+.parcours-section {
+    background-color: #FCEC80;
+    width: 100%;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.parcours-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: black;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+.parcours-grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.parcours-carte {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.parcours-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.parcours-image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.parcours-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: black;
+}
+
+.parcours-texte {
+    padding: 20px;
+}
+
+.parcours-texte h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.parcours-texte p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
 }
 
 footer {
