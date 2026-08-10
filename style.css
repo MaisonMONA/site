@@ -946,6 +946,8 @@ main h1 {
     position: absolute;
     top: 12px;
     left: 12px;
+    display: inline-flex;
+    gap: 6px;
     background-color: white;
     padding: 4px 12px;
     border-radius: 4px;
@@ -953,6 +955,13 @@ main h1 {
     font-weight: 600;
     font-size: 12px;
     color: black;
+}
+
+.parcours-badge img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    display: block;
 }
 
 .parcours-texte {
@@ -982,6 +991,8 @@ main h1 {
     color: #666;
     margin-top: 12px;
 }
+
+/* ===== FOOTER ===== */
 footer {
     background-color: black;
     width: 100%;
@@ -1137,6 +1148,51 @@ footer {
 
     .carte {
         height: 200px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* ===== FOOTER ===== */
+    footer {
+        height: auto;
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-form {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+    }
+
+    .footer-form input {
+        width: 100%;
+    }
+
+    .footer-form button {
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .footer-col {
+        width: 45%;
     }
 
 }
