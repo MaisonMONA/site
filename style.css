@@ -118,33 +118,80 @@ html {
     scroll-behavior: smooth;
 }
 
+/* ===== HAUT DE PAGE À PROPOS ===== */
 
-/* ===== TITRE ===== */
-
-main h1 {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    margin: 40px auto;
-}
-
-
-/* ===== GRANDE IMAGE ===== */
-
-.apropos-hero {
-    width: 100%;
+.apropos-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto 60px;
 }
 
-.apropos-hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
+
+/* ===== TEXTE À GAUCHE ===== */
+
+.apropos-texte {
+    flex: 1;
 }
 
+.apropos-texte h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+    color: black;
+    text-align: left;
+}
+
+.apropos-texte p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+
+/* ===== LISTE DES LIENS ===== */
+
+.apropos-liens {
+    margin: 20px 0 0;
+    padding-left: 22px;
+}
+
+.apropos-liens li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.apropos-liens a {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* ===== IMAGE À DROITE ===== */
+
+.apropos-image-intro {
+    flex: 1;
+    padding-top: 50px;
+}
+
+.apropos-image-intro img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
 
 /* ===== ZONE JAUNE DES CONTENUS ===== */
 
@@ -306,6 +353,21 @@ main h1 {
     font-weight: 600;
     margin: 0;
     text-align: left;
+}
+
+/* ===== ANCIEN·NE·S CONTRIBUTEURS ===== */
+.equipe-anciens .equipe-colonne li {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+
+.equipe-anciens .separateur-titre {
+    margin: 30px 0 20px;
+}
+
+.equipe-anciens .equipe-grille {
+    gap: 40px;
 }
 
 
