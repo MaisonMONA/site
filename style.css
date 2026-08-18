@@ -589,6 +589,8 @@ main {
     padding-top: 80px;
 }
 
+/* ===== APPLICATION ===== */
+
 main h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -852,6 +854,12 @@ main h1 {
     gap: 100px;
 }
 
+.application-page {
+    background-image: url("img/logo/line.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
 /* ===== PAGE MÉDIATION ===== */
 
 /* Section intro haut de page */
@@ -1211,6 +1219,15 @@ main h1 {
     margin-bottom: 0;
 }
 
+/* ===== SÉPARATION ENTRE LES SERVICES ===== */
+
+.service-separateur {
+    width: 90%;
+    max-width: 1200px;
+    height: 1px;
+    background-color: #000;
+    margin: 60px auto;
+}
 
 /* ===== LIEN COURRIEL ===== */
 
@@ -1219,6 +1236,176 @@ main h1 {
     text-decoration: underline;
 }
 
+/* ===== BOUTON PRÉSENTATION ===== */
+
+.service-presentation {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: #5B9BD5;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.service-presentation:hover {
+    background-color: #7B4AB8;
+}
+
+/* ===== PROJETS ===== */
+
+.service-projets {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    margin-top: 30px;
+}
+
+.service-projets a {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* ===== IMAGE CENTRÉE ===== */
+
+.service-image-centree {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-image-centree img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ===== SERVICE : SERVICES DE CONSULTATION ===== */
+
+.service-consultation {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ===== SÉPARATEUR ===== */
+
+.service-consultation-separateur {
+    width: 90%;
+    max-width: 1100px;
+    height: 1px;
+    background-color: #000;
+    margin: 70px auto;
+}
+
+
+/* ===== TEXTE ===== */
+
+.service-consultation-details {
+    width: 100%;
+}
+
+.service-consultation-details h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 0 16px 0;
+}
+
+.service-consultation-details p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+}
+
+.service-consultation-details ul {
+    margin: 20px 0 0 0;
+    padding-left: 35px;
+}
+
+.service-consultation-details li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+
+/* ===== IMAGE ===== */
+
+.service-consultation-image {
+    width: 100%;
+    margin: 40px auto 0 auto;
+}
+
+.service-consultation-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+/* ===== LÉGENDE SOUS L'IMAGE ===== */
+
+.service-consultation-legende {
+    width: 100%;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.service-consultation-legende p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* ===== BOUTON ===== */
+
+.service-consultation-bouton {
+    margin-top: 30px;
+}
+
+.service-consultation-bouton a {
+    display: inline-block;
+    background-color: #0066CC;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 14px 20px;
+    border-radius: 6px;
+}
+
+.service-consultation-bouton a:hover {
+    background-color: #6A3FB5;
+}
+.services-page {
+    position: relative;
+    background-image: url("img/logo/line.png");
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 100% auto;
+}
 /* ===== FOOTER ===== */
 footer {
     background-color: black;
