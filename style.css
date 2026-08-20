@@ -860,6 +860,7 @@ main h1 {
     background-position: center top;
     background-size: 100% auto;
 }
+
 /* ===== PAGE MÉDIATION ===== */
 
 /* Section intro haut de page */
@@ -867,7 +868,7 @@ main h1 {
     display: flex;
     align-items: flex-start;
     gap: 60px;
-    padding: 60px 80px;
+    padding: 60px 120px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -982,7 +983,7 @@ main h1 {
     line-height: 40px;
     color: black;
     text-align: left;
-    width: 90%;
+    width: 80%;
     margin: 0 auto 40px auto;
 }
 
@@ -990,7 +991,7 @@ main h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -1607,6 +1608,640 @@ footer {
 
     .footer-col {
         width: 45%;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — PAGE APPLICATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ===== PAGE GLOBALE ===== */
+
+    .application-page {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== TITRE PRINCIPAL ===== */
+
+    .application-page h1 {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 0 20px;
+        margin-top: 40px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== MOCKUPS DU HAUT ===== */
+
+    .mockups {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .mockups img {
+        width: 30%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .mockups img:nth-child(2) {
+        margin-top: 0;
+    }
+
+
+    /* ===== CHAPÔ ===== */
+
+    .chapo {
+        width: auto;
+        height: auto;
+        margin: 40px 25px 0;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .sous-chapo {
+        width: auto;
+        height: auto;
+        margin: 16px 25px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    /* ===== BOUTONS DES STORES ===== */
+
+    .store-buttons {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        margin: 25px auto 0;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .store-buttons img:nth-child(1) {
+        width: 150px;
+        height: auto;
+    }
+
+    .store-buttons img:nth-child(2) {
+        width: 132px;
+        height: auto;
+    }
+
+
+    /* =====================================================
+       BLOCS LA CARTE / LA COLLECTION / L'ANNUAIRE
+       ===================================================== */
+
+    .bloc-carte,
+    .bloc-collection,
+    .bloc-annuaire {
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+
+    /* ===== LA CARTE ===== */
+
+    .bloc-carte {
+        margin-top: 70px;
+    }
+
+    .bloc-carte img {
+        width: 150px;
+        height: auto;
+        margin-top: 0;
+        order: 1;
+    }
+
+    .bloc-carte-texte {
+        width: 100%;
+        order: 2;
+    }
+
+
+    /* ===== LA COLLECTION ===== */
+
+    .bloc-collection {
+        margin-top: 80px;
+    }
+
+    .bloc-collection img {
+        width: 150px;
+        height: auto;
+        margin-top: 0;
+        order: 1;
+    }
+
+    .bloc-collection-texte {
+        width: 100%;
+        order: 2;
+    }
+
+
+    /* ===== L'ANNUAIRE ===== */
+
+    .bloc-annuaire {
+        margin-top: 80px;
+    }
+
+    .bloc-annuaire img {
+        width: 150px;
+        height: auto;
+        margin-top: 0;
+        order: 1;
+    }
+
+    .bloc-annuaire-texte {
+        width: 100%;
+        order: 2;
+    }
+
+
+    /* ===== TITRES DES BLOCS ===== */
+
+    .bloc-carte-texte h2,
+    .bloc-collection-texte h2,
+    .bloc-annuaire-texte h2 {
+        width: 100%;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 12px;
+    }
+
+
+    /* ===== TEXTES DES BLOCS ===== */
+
+    .bloc-carte-texte p,
+    .bloc-collection-texte p,
+    .bloc-annuaire-texte p {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       BANDE JAUNE
+       ===================================================== */
+
+    .bande-jaune {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 12px;
+
+        padding: 20px 25px;
+        margin-top: 80px;
+
+        box-sizing: border-box;
+    }
+
+    .bande-item {
+        width: 100%;
+        white-space: normal;
+        gap: 8px;
+    }
+
+    .bande-item span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .pin {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       BLOC TÉLÉCHARGEMENT
+       ===================================================== */
+
+    .bloc-telechargement {
+        width: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 40px;
+
+        margin: 80px 25px 0;
+    }
+
+
+    /* Texte téléchargement */
+
+    .bloc-telechargement-texte {
+        width: 100%;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .bloc-telechargement-texte h2 {
+        width: 100%;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0;
+    }
+
+
+    /* Boutons téléchargement */
+
+    .store-buttons-2 {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .store-buttons-2 img:nth-child(1) {
+        width: 150px;
+        height: auto;
+    }
+
+    .store-buttons-2 img:nth-child(2) {
+        width: 132px;
+        height: auto;
+    }
+
+
+    /* Mockups du bas */
+
+    .bloc-telechargement-mockups {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .bloc-telechargement-mockups img {
+        width: 30%;
+        height: auto;
+        margin-top: 0;
+    }
+
+}
+
+
+/* =========================================================
+   PETITS TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .application-page h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+
+    .mockups {
+        gap: 7px;
+        padding: 0 15px;
+    }
+
+
+    .chapo {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    .sous-chapo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .bloc-carte,
+    .bloc-collection,
+    .bloc-annuaire {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .bloc-carte img,
+    .bloc-collection img,
+    .bloc-annuaire img {
+        width: 140px;
+    }
+
+
+    .bloc-carte-texte h2,
+    .bloc-collection-texte h2,
+    .bloc-annuaire-texte h2,
+    .bloc-telechargement-texte h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+
+    .store-buttons img:nth-child(1),
+    .store-buttons-2 img:nth-child(1) {
+        width: 140px;
+    }
+
+    .store-buttons img:nth-child(2),
+    .store-buttons-2 img:nth-child(2) {
+        width: 125px;
+    }
+
+
+    .bloc-telechargement {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — PAGE MÉDIATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ===== HAUT DE PAGE ===== */
+
+    .mediation-intro {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        width: 100%;
+        padding: 40px 25px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Texte */
+
+    .mediation-texte {
+        width: 100%;
+    }
+
+    .mediation-texte h1 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+
+    .mediation-texte h2 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 28px;
+    }
+
+    .mediation-texte p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    /* Image */
+
+    .mediation-image {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .mediation-image img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+    }
+
+
+    /* =====================================================
+       SECTION JAUNE
+       ===================================================== */
+
+    .mediation-jaune {
+        width: calc(100% - 50px);
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 30px;
+
+        margin: 20px auto 50px;
+
+        box-sizing: border-box;
+    }
+
+
+    .mediation-bloc {
+        width: 100%;
+    }
+
+    .mediation-bloc h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .mediation-bloc p,
+    .mediation-bloc ul li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    /* =====================================================
+       NOS PARCOURS
+       ===================================================== */
+
+    .parcours-section {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+
+    .parcours-section h2 {
+        width: calc(100% - 50px);
+
+        font-size: 28px;
+        line-height: 36px;
+
+        margin: 0 auto 30px;
+    }
+
+
+    /* Une seule colonne sur téléphone */
+
+    .parcours-grille {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        width: calc(100% - 50px);
+
+        gap: 25px;
+
+        margin: 0 auto;
+    }
+
+
+    /* ===== CARTES ===== */
+
+    .parcours-carte {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+
+    /* Images des cartes */
+
+    .parcours-image-container {
+        width: 100%;
+    }
+
+    .parcours-image-container img {
+        width: 100%;
+        height: 220px;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+
+    /* Badge */
+
+    .parcours-badge {
+        top: 10px;
+        left: 10px;
+
+        padding: 4px 10px;
+
+        font-size: 11px;
+    }
+
+    .parcours-badge img {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    /* Texte des cartes */
+
+    .parcours-texte {
+        padding: 18px;
+    }
+
+    .parcours-texte h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .parcours-texte p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   PETITS TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ===== INTRO ===== */
+
+    .mediation-intro {
+        padding: 35px 20px;
+    }
+
+    .mediation-texte h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .mediation-texte p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    /* ===== IMAGE ===== */
+
+    .mediation-image img {
+        max-height: 280px;
+    }
+
+
+    /* ===== SECTION JAUNE ===== */
+
+    .mediation-jaune {
+        width: calc(100% - 40px);
+        padding: 25px;
+    }
+
+
+    /* ===== NOS PARCOURS ===== */
+
+    .parcours-section h2 {
+        width: calc(100% - 40px);
+
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .parcours-grille {
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+
+    .parcours-image-container img {
+        height: 200px;
+    }
+
+    .parcours-texte {
+        padding: 16px;
     }
 
 }
