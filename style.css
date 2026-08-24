@@ -1407,6 +1407,146 @@ main h1 {
     background-position: center top;
     background-size: 100% auto;
 }
+
+/* ===== CARTES DE NAVIGATION DES SERVICES ===== */
+
+.services-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 80px;
+}
+
+.service-carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 180px;
+    padding: 30px;
+
+    background-color: #FCEC80;
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: black;
+
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-carte:hover {
+    transform: translateY(-5px);
+    background-color: #E9D95F;
+}
+
+.service-carte h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.service-carte p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* ===== CARTES DES RÉALISATIONS ===== */
+
+.realisations-cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 60px auto;
+}
+
+
+/* ===== CARTE ===== */
+
+.realisation-carte {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 150px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 12px;
+
+    color: black;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* ===== NATURE DE LA RÉALISATION ===== */
+
+.realisation-type {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+
+/* ===== INFORMATIONS ===== */
+
+.realisation-infos {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    text-align: right;
+
+    width: 100%;
+}
+
+
+/* ===== NOM ===== */
+
+.realisation-nom {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+/* ===== DATE ===== */
+
+.realisation-date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 4px;
+}
+
+
+/* ===== SURVOL ===== */
+
+.realisation-carte:hover {
+    background-color: #FCEC80;
+}
 /* ===== FOOTER ===== */
 footer {
     background-color: black;
@@ -1608,6 +1748,320 @@ footer {
 
     .footer-col {
         width: 45%;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — PAGE À PROPOS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ===== HAUT DE PAGE ===== */
+
+    .apropos-intro {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        margin: 0 auto 40px;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+    /* Texte en premier */
+    .apropos-texte {
+        width: 100%;
+        flex: none;
+    }
+
+    .apropos-texte h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .apropos-texte p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Liste des liens */
+    .apropos-liens {
+        padding-left: 20px;
+    }
+
+    .apropos-liens li {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 8px;
+    }
+
+    /* Image sous le texte */
+    .apropos-image-intro {
+        width: 100%;
+        flex: none;
+        padding-top: 0;
+    }
+
+    .apropos-image-intro img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: cover;
+    }
+
+
+    /* ===== ZONE JAUNE ===== */
+
+    .apropos-contenu {
+        width: 100%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== SECTIONS BLANCHES ===== */
+
+    .apropos-section {
+        width: 100%;
+        max-width: none;
+        padding: 25px;
+        margin: 0 auto 30px;
+        box-sizing: border-box;
+    }
+
+    .apropos-section h2 {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 18px;
+    }
+
+    .apropos-section p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+
+    /* =====================================================
+       MISSION
+       ===================================================== */
+
+    .apropos-contenu-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .apropos-contenu-section .apropos-texte {
+        width: 100%;
+    }
+
+    .apropos-image {
+        width: 100%;
+        flex: none;
+    }
+
+    .apropos-image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* =====================================================
+       ÉQUIPE
+       ===================================================== */
+
+    .equipe-grille {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .equipe-colonne {
+        width: 100%;
+    }
+
+    .equipe-colonne ul {
+        padding-left: 20px;
+    }
+
+    .equipe-colonne li {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+
+    /* =====================================================
+       ANCIEN·NE·S CONTRIBUTEURS
+       ===================================================== */
+
+    .equipe-anciens .equipe-grille {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .equipe-anciens .equipe-colonne li {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 7px;
+    }
+
+
+    /* =====================================================
+       SÉPARATEURS
+       ===================================================== */
+
+    .separateur-titre {
+        margin: 40px 0 25px;
+    }
+
+    .separateur-titre span {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .separateur-titre h3 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+
+    /* =====================================================
+       ARTISTES EN RÉSIDENCE
+       ===================================================== */
+
+    .equipe-residence {
+        margin-top: 35px;
+    }
+
+    .artistes-liste ul {
+        padding-left: 20px;
+    }
+
+    .artistes-liste li {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+
+    /* =====================================================
+       CONSEIL D'ADMINISTRATION
+       ===================================================== */
+
+    .conseil-liste {
+        padding-left: 20px;
+    }
+
+    .conseil-liste li {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .conseil-renseignements {
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 25px;
+    }
+
+
+    /* =====================================================
+       PARTENAIRES
+       ===================================================== */
+
+    .partenaires-contenu p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .partenaires-logos {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .partenaires-logos img {
+        width: 80%;
+        max-width: 280px;
+        height: auto;
+    }
+
+
+    /* =====================================================
+       CONTACT
+       ===================================================== */
+
+    .contact-contenu {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .contact-infos {
+        width: 100%;
+        flex: none;
+    }
+
+    .contact-infos p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .contact-carte {
+        width: 100%;
+        flex: none;
+    }
+
+    .contact-carte img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   PETITS TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .apropos-intro {
+        padding: 0 18px;
+    }
+
+    .apropos-texte h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .apropos-contenu {
+        padding: 30px 15px;
+    }
+
+    .apropos-section {
+        padding: 22px;
+        border-radius: 10px;
+    }
+
+    .apropos-section h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .apropos-section p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .apropos-liens li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .partenaires-logos img {
+        width: 90%;
     }
 
 }
@@ -2244,4 +2698,57 @@ footer {
         padding: 16px;
     }
 
+}
+
+/* ===== RESPONSIVE PAGE SERVICES ===== */
+
+@media (max-width: 768px) {
+
+    /* Cartes du haut */
+    .services-navigation {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 16px;
+    }
+
+    .service-carte {
+        min-height: 150px;
+    }
+
+    /* Contenu des services */
+    .service-section {
+        width: 90%;
+    }
+
+    /* Texte + images */
+    .service-details {
+        width: 100%;
+    }
+
+    .service-image-centree {
+        width: 100%;
+    }
+
+    .service-image-centree img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Boutons */
+    .service-presentation {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Texte */
+    .service-section h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .service-section p,
+    .service-section li {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
